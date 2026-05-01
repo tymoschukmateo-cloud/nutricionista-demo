@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentina Pérez — Nutricionista | Villa María, Córdoba</title>
+  <meta name="description" content="Valentina Pérez, nutricionista certificada en Villa María, Córdoba. Planes nutricionales personalizados, consultas online y presenciales. Primera consulta gratuita.">
+  <meta property="og:title" content="Valentina Pérez — Nutricionista">
+  <meta property="og:description" content="Planes nutricionales personalizados en Villa María, Córdoba.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none"><path d="M16 4C12 4 8 8 8 14c0 4 2 7 5 9l1 5h4l1-5c3-2 5-5 5-9 0-6-4-10-8-10z" fill="#52B788"/><path d="M16 8c-1 0-2 1-3 3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Valentina Pérez
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav__link nav__cta">Agendar consulta</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1920&q=85&auto=format&fit=crop" alt="Frutas y alimentos saludables coloridos" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content container">
+      <span class="hero__badge">Nutricionista Certificada · Villa María, Córdoba</span>
+      <h1 class="hero__title">Tu camino hacia<br><em>una vida más saludable</em></h1>
+      <p class="hero__subtitle">Planes nutricionales personalizados que se adaptan a tu ritmo de vida, tus metas y tu bienestar real.</p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--coral">Consulta gratuita →</a>
+        <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><strong>+500</strong><span>pacientes</span></div>
+        <div class="stat"><strong>8 años</strong><span>de experiencia</span></div>
+        <div class="stat"><strong>100%</strong><span>personalizado</span></div>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="hero__scroll" aria-label="Scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <section class="about" id="sobre-mi">
+    <div class="container about__grid">
+      <div class="about__img-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1675270882554-ab6817fb44f3?w=700&q=85&auto=format&fit=crop&crop=top" alt="Valentina Pérez, Nutricionista" loading="lazy">
+        <div class="about__badge"><strong>Lic.</strong><span>Nutrición y Dietética — UNC</span></div>
+      </div>
+      <div class="about__text reveal">
+        <span class="label">Sobre mí</span>
+        <h2>Hola, soy <em>Valentina Pérez</em></h2>
+        <p>Soy nutricionista egresada de la Universidad Nacional de Córdoba, con más de 8 años acompañando a personas en su transformación hacia hábitos más saludables y duraderos.</p>
+        <p>Creo en la nutrición como un estilo de vida, no como una dieta restrictiva. Mi enfoque es <strong>flexible, personalizado y basado en evidencia científica</strong>, adaptado a tus gustos y tu rutina diaria.</p>
+        <ul class="credentials">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Lic. en Nutrición — Universidad Nacional de Córdoba</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Especialización en Nutrición Deportiva</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Atención presencial en Villa María y online</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Miembro del Colegio de Nutricionistas de Córdoba</li>
+        </ul>
+        <a href="#contacto" class="btn btn--green">Agendá tu consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="sec-header">
+        <span class="label">Lo que ofrezco</span>
+        <h2>Mis <em>servicios</em></h2>
+        <p>Cada plan está diseñado específicamente para vos, sin fórmulas genéricas.</p>
+      </div>
+      <div class="services__grid">
+        <div class="svc-card reveal">
+          <div class="svc-card__img"><img src="https://images.unsplash.com/photo-1675270427967-b8f09d7c939b?w=600&q=80&auto=format&fit=crop" alt="Consulta inicial" loading="lazy"></div>
+          <div class="svc-card__body"><span class="svc-icon">🍽️</span><h3>Consulta inicial</h3><p>Evaluación completa de tu estado nutricional, hábitos, objetivos y estilo de vida. Duración: 60 minutos.</p><span class="tag">Presencial · Online</span></div>
+        </div>
+        <div class="svc-card svc-card--featured reveal">
+          <div class="svc-card__img"><img src="https://images.unsplash.com/photo-1544510807-d0289d40b17c?w=600&q=80&auto=format&fit=crop" alt="Plan nutricional" loading="lazy"></div>
+          <div class="svc-card__body"><span class="svc-icon">📋</span><h3>Plan nutricional personalizado</h3><p>Plan completo con menú semanal, recetas y estrategias adaptadas a tus objetivos y preferencias.</p><span class="tag tag--hot">Más popular</span></div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-card__img"><img src="https://images.unsplash.com/photo-1582983552131-5d59920a9476?w=600&q=80&auto=format&fit=crop" alt="Seguimiento" loading="lazy"></div>
+          <div class="svc-card__body"><span class="svc-icon">📊</span><h3>Seguimiento mensual</h3><p>Control de evolución, ajuste del plan y acompañamiento continuo para garantizar tus resultados.</p><span class="tag">Presencial · Online</span></div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-card__img"><img src="https://images.unsplash.com/photo-1540298901673-82186025e606?w=600&q=80&auto=format&fit=crop" alt="Nutrición deportiva" loading="lazy"></div>
+          <div class="svc-card__body"><span class="svc-icon">🏃</span><h3>Nutrición deportiva</h3><p>Optimización del rendimiento, recuperación muscular y composición corporal para atletas y activos.</p><span class="tag">Especialidad</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="why__bg">
+      <img src="https://images.unsplash.com/photo-1599908122606-c3bc86f8aac5?w=1920&q=80&auto=format&fit=crop" alt="Frutas frescas" loading="lazy">
+      <div class="why__overlay"></div>
+    </div>
+    <div class="container why__inner">
+      <div class="sec-header sec-header--light">
+        <span class="label label--light">Mi enfoque</span>
+        <h2>¿Por qué elegir<br><em>mi acompañamiento?</em></h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card reveal"><div class="why-card__icon">🎯</div><h3>Sin dietas restrictivas</h3><p>Nada de privarte de lo que amás. Aprenderás a comer mejor sin sacrificar el placer.</p></div>
+        <div class="why-card reveal"><div class="why-card__icon">🔬</div><h3>Basado en evidencia</h3><p>Cada recomendación está respaldada por la ciencia nutricional más actualizada.</p></div>
+        <div class="why-card reveal"><div class="why-card__icon">💬</div><h3>Acompañamiento real</h3><p>Disponible por WhatsApp entre consultas para responder tus dudas y mantenerte motivada.</p></div>
+        <div class="why-card reveal"><div class="why-card__icon">📱</div><h3>Online o presencial</h3><p>Consultás desde donde estés. Atención en Villa María o por videollamada a todo el país.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="sec-header">
+        <span class="label">Resultados reales</span>
+        <h2>Lo que dicen mis <em>pacientes</em></h2>
+      </div>
+      <div class="test__grid">
+        <div class="test-card reveal"><div class="stars">★★★★★</div><p>"Llegué con muchas dudas y Valentina me dio claridad desde la primera consulta. Perdí 8 kg en 3 meses sin pasar hambre y aprendí a comer de verdad."</p><div class="test-author"><div class="avatar" style="background:#95D5B2">ML</div><div><strong>María Laura G.</strong><span>Villa María, Córdoba</span></div></div></div>
+        <div class="test-card test-card--feat reveal"><div class="stars">★★★★★</div><p>"Como deportista amateur necesitaba algo más que una dieta genérica. Valentina diseñó un plan para mejorar mi rendimiento en running y los resultados fueron increíbles."</p><div class="test-author"><div class="avatar" style="background:#52B788;color:#fff">SR</div><div><strong>Santiago R.</strong><span>Córdoba Capital</span></div></div></div>
+        <div class="test-card reveal"><div class="stars">★★★★★</div><p>"Tengo hipotiroidismo y siempre fue difícil bajar de peso. Con Valentina encontré un equilibrio real. La recomiendo a todas mis amigas."</p><div class="test-author"><div class="avatar" style="background:#D8F3DC">AP</div><div><strong>Ana Paula M.</strong><span>Bell Ville, Córdoba</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="sec-header"><span class="label">Inspiración</span><h2>Comer rico y <em>nutritivo</em></h2></div>
+      <div class="gallery__grid">
+        <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=900&q=80&auto=format&fit=crop" alt="Frutas de temporada" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1675270690434-aa99f4871e8a?w=600&q=80&auto=format&fit=crop" alt="Consulta nutricional" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1544510807-d0289d40b17c?w=600&q=80&auto=format&fit=crop" alt="Plato de frutas" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1550005876-1049c5ce92da?w=600&q=80&auto=format&fit=crop" alt="Sandía y mango" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1540298901673-82186025e606?w=600&q=80&auto=format&fit=crop" alt="Jugo verde" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1582983552131-5d59920a9476?w=900&q=80&auto=format&fit=crop" alt="Comida saludable" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <span class="label">Hablemos</span>
+        <h2>¿Querés empezar<br><em>tu cambio hoy?</em></h2>
+        <p class="contact__lead">La primera consulta es gratuita. Completá el formulario o escribime directamente por WhatsApp.</p>
+        <ul class="contact__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>Ubicación</strong><span>Villa María, Córdoba, Argentina</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><strong>WhatsApp</strong><a href="https://wa.me/5493534000000?text=Hola%20Valentina%2C%20quiero%20agendar%20una%20consulta.">+54 9 353 400-0000</a></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><strong>Email</strong><a href="mailto:valentina@nutricionvillam.com.ar">valentina@nutricionvillam.com.ar</a></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><strong>Horarios</strong><span>Lun–Vie: 8:00–19:00 · Sáb: 9:00–13:00</span></div></li>
+        </ul>
+      </div>
+      <div class="contact__form-wrap reveal">
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="cform">
+          <input type="hidden" name="form-name" value="contacto">
+          <p style="display:none"><label>No completar: <input name="bot-field"></label></p>
+          <div class="fgroup"><label for="nombre">Nombre completo *</label><input type="text" id="nombre" name="nombre" required placeholder="Tu nombre"></div>
+          <div class="fgroup"><label for="email">Email *</label><input type="email" id="email" name="email" required placeholder="tu@email.com"></div>
+          <div class="fgroup"><label for="tel">WhatsApp</label><input type="tel" id="tel" name="telefono" placeholder="+54 9 353 ..."></div>
+          <div class="fgroup"><label for="objetivo">¿Cuál es tu objetivo?</label><select id="objetivo" name="objetivo"><option value="">Seleccioná una opción</option><option>Bajar de peso</option><option>Ganar masa muscular</option><option>Mejorar hábitos alimenticios</option><option>Nutrición deportiva</option><option>Manejo de condición médica</option><option>Otro</option></select></div>
+          <div class="fgroup"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame un poco sobre vos y tu situación actual..."></textarea></div>
+          <button type="submit" class="btn btn--coral btn--full">Enviar consulta gratuita →</button>
+          <p class="form-note">✓ Respuesta en menos de 24 horas · Sin compromiso</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><span class="footer__logo">🌿 Valentina Pérez</span><p>Nutricionista certificada en Villa María, Córdoba. Transformando vidas a través de la alimentación consciente.</p></div>
+      <div class="footer__col"><strong>Navegación</strong><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#testimonios">Testimonios</a><a href="#contacto">Contacto</a></div>
+      <div class="footer__col"><strong>Redes sociales</strong><a href="#">Instagram</a><a href="#">Facebook</a><a href="https://wa.me/5493534000000">WhatsApp</a></div>
+    </div>
+    <div class="footer__bottom"><div class="container footer__bottom-inner"><p>© 2026 Valentina Pérez – Nutricionista. Villa María, Córdoba.</p><p>Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p></div></div>
+  </footer>
+
+  <a href="https://wa.me/5493534000000?text=Hola%20Valentina%2C%20quiero%20agendar%20una%20consulta%20gratuita." class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
