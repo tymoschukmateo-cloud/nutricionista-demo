@@ -28,3 +28,28 @@ if (form) {
     btn.disabled = true;
   });
 }
+
+// Parallax frutas
+(function () {
+  const hero   = document.querySelector('.hero');
+  const fruits = document.querySelectorAll('.fruit');
+  if (!hero || !fruits.length) return;
+
+  hero.addEventListener('mousemove', function (e) {
+    const rect = hero.getBoundingClientRect();
+    const dx = (e.clientX - rect.left  - rect.width  / 2) / (rect.width  / 2); // -1..1
+    const dy = (e.clientY - rect.top   - rect.height / 2) / (rect.height / 2); // -1..1
+    fruits.forEach(function (f) {
+      const d = parseFloat(f.dataset.depth) || 0.3;
+      f.style.setProperty('--px', (dx * 28 * d).toFixed(1) + 'px');
+      f.style.setProperty('--py', (dy * 18 * d).toFixed(1) + 'px');
+    });
+  }, { passive: true });
+
+  hero.addEventListener('mouseleave', function () {
+    fruits.forEach(function (f) {
+      f.style.setProperty('--px', '0px');
+      f.style.setProperty('--py', '0px');
+    });
+  });
+}());
