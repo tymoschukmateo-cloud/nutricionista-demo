@@ -29,6 +29,17 @@ if (form) {
   });
 }
 
+// Parallax Spline background
+(function () {
+  var splineInner = document.querySelector('.spline-inner');
+  if (!splineInner) return;
+  var maxOffset = window.innerHeight * 0.13; // buffer del 15% → max safe travel
+  window.addEventListener('scroll', function () {
+    var offset = Math.min(window.scrollY * 0.07, maxOffset);
+    splineInner.style.transform = 'translateY(' + (-offset).toFixed(1) + 'px)';
+  }, { passive: true });
+}());
+
 // Parallax frutas
 (function () {
   const hero   = document.querySelector('.hero');
